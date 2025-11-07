@@ -21,6 +21,8 @@ public class CalcEngine
         displayValue = 0;
         previousOperator = ' ';
         leftOperand = 0;
+        System.out.println("CALCEngine CREATED");
+        reportState("Donzo");
     }
 
     /**
@@ -29,7 +31,9 @@ public class CalcEngine
      */
     public int getDisplayValue()
     {
+        System.out.println("Im taking a wild guess but is this your card????" + displayValue);
         return displayValue;
+        
     }
 
     /**
@@ -62,6 +66,7 @@ public class CalcEngine
      */
     public void minus()
     {
+        System.out.println("MINUIS called");
         applyPreviousOperator();
         previousOperator = '-';
         displayValue = 0;
@@ -99,6 +104,7 @@ public class CalcEngine
      */
     public String getTitle()
     {
+        System.out.println("I dont even know what to print ;((");
         return "Super Calculator";
     }
 
@@ -108,6 +114,7 @@ public class CalcEngine
      */
     public String getAuthor()
     {
+        System.out.println("Sent a trojan horse to you and i have full access to your info");
         return "Hacker T. Largebrain";
     }
 
@@ -117,6 +124,7 @@ public class CalcEngine
      */
     public String getVersion()
     {
+        System.out.println("Complete lies this is still the version 0.00001 no matter what it says");
         return "version 0.2";
     }
 
